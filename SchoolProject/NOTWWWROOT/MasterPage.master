@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html>
+<head runat="server">
+    <title>its a thing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .margin-left{
+    margin-left: 15px !important;
+    }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="HomePage.aspx">Metal Music</a>
+                    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="dropdownMetallica" href="#"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Metallica
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="Kirk%20Hammett.aspx">Kirk Hammett</a>
+                                    <a class="dropdown-item" href="James%20Hetfield.aspx">James Hetfield</a>
+                                    <a class="dropdown-item" href="Lars%20ulrich.aspx">Lars ulrich</a>
+                                    <a class="dropdown-item" href="Robert%20Trujillo.aspx">Robert Trujillo</a>
+                                    <a class="dropdown-item" href="Cliff%20burton.aspx">Cliff burton</a>
+                                    <a class="dropdown-item" href="Enter%20Sandman.aspx">Enter sandman</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="dropdownBlindGuardian" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blind guardian
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="Hansi%20Kürsch.aspx">Hansi Kürsch</a>
+                                        <a class="dropdown-item" href="André%20Olbrich.aspx">André Olbrich</a>
+                                        <a class="dropdown-item" href="Marcus%20Siepen.aspx">Marcus Siepen</a>
+                                        <a class="dropdown-item" href="Thomen%20Stauch.aspx">Thomen Stauch</a>
+                                        <a class="dropdown-item" href="Frederik%20Ehmke.aspx">Frederik Ehmke</a>
+                                        <a class="dropdown-item" href="Mirror%20Mirror.aspx">Mirror Mirror</a>
+                                    </div>        
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="dropdownSabaton" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sabaton
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">                                    
+                                    <a class="dropdown-item" href="Joakim%20Brodén.aspx">Joakim Brodén</a>
+                                    <a class="dropdown-item" href="Pär%20Sundström.aspx">Pär Sundström</a>
+                                    <a class="dropdown-item" href="Hannes%20Van%20Dahl.aspx">Hannes Van Dahl</a>
+                                    <a class="dropdown-item" href="Chris%20Rörland.aspx">Chris Rörland</a>
+                                    <a class="dropdown-item" href="Tommy%20Johansson.aspx">Tommy Johansson</a>
+                                    <a class="dropdown-item" href="To%20Hell%20and%20Back.aspx">To hell and back</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="dropdownSlayer" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Slayer
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">                                    
+                                    <a class="dropdown-item" href="Kerry%20King.aspx">Kerry King</a>
+                                    <a class="dropdown-item" href="Tom%20Araya.aspx">Tom Araya</a>
+                                    <a class="dropdown-item" href="Gary%20Holt.aspx">Gary Holt</a>
+                                    <a class="dropdown-item" href="Paul%20Bostaph.aspx">Paul Bostaph</a>
+                                    <a class="dropdown-item" href="Jeff%20Hanneman.aspx">Jeff Hanneman</a>
+                                    <a class="dropdown-item" href="Raining%20blood.aspx">Raining blood</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="dropdownSlipknot" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Slipknot
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">                                    
+                                    <a class="dropdown-item" href="Corey%20Taylor.aspx">Corey Taylor</a>
+                                    <a class="dropdown-item" href="Joey%20Jordison.aspx">Joey Jordison</a>
+                                    <a class="dropdown-item" href="Paul%20Gray.aspx">Paul Gray</a>
+                                    <a class="dropdown-item" href="Jim%20Root.aspx">Jim Root</a>
+                                    <a class="dropdown-item" href="Shawn%20Crahan.aspx">Shawn Crahan</a>
+                                    <a class="dropdown-item" href="Psychosocial%20.aspx">Psychosocial</a>
+                                </div>
+                            </li>                            
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="navbar-item my-2 my-lg-0">
+                                <a class="btn btn-primary" href="SignUp.aspx" role="button">Sing Up</a> 
+                            </li>
+                        </ul>
+                    </div>
+         </nav>
+    </form>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+</body>
+</html>
