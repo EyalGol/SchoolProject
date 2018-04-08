@@ -232,7 +232,7 @@
                 document.getElementById("errBirthDate").innerHTML = "enter correct date"
                 return false
             }
-            else if (parseInt(n[0]) > year.getFullYear()) {
+            else if (parseInt(n[0]) > year.getFullYear() && parseInt(n[0]) < 1900) {
                 document.getElementById("errBirthDate").innerHTML = "enter correct date"
                 return false
             }
