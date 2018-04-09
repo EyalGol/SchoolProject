@@ -241,7 +241,7 @@
             if (document.getElementById("afredrik1").checked) {
                 count++
             }
-            alert("You have answerd " + count + " question correctly \nIt took you:" + ((Date.now() - d)/60000).toFixed(2)+ " minutes")
+            alert("You have answerd: " + count + " question correctly \nIt took you: " + ((Date.now() - d)/1000).toFixed(2)+ " seconds")
         }
         function MasterCheck() {
             if (!CheckFilled()) {
