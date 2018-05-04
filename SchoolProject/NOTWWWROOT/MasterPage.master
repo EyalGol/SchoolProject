@@ -1,11 +1,10 @@
-﻿<%@ Master Language="C#" %>
-
+﻿<%@ Master Language="C#" Debug="true"%>
+<%@ Import Namespace="System.Data.SqlClient" %>
+<%@ Import Namespace="System.Data" %>
 <!DOCTYPE html>
-
 <script runat="server">
 
 </script>
-
 <html>
 <head runat="server">
     <title>its a thing</title>
