@@ -168,6 +168,11 @@
             }
             else if (n.split("@")[1].split(".")[1].length < 2) {
                 document.getElementById("errEmail").innerHTML = "must have at least 2 character after the dot"
+                return false
+            }
+            else if (\w*[a-zA-Z]\w*.test(n.split("@")[1].split(".")[0])) {
+                document.getElementById("errEmail").innerHTML = "must eter proper @address"
+                return false
             }
             else {
                 document.getElementById("errEmail").innerHTML = ""
