@@ -7,7 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <style type="text/css">.jumbotron {
     position: relative;
-    background: #000 url("http://www.intrawallpaper.com/static/images/VintageBackground.jpg") center center;
+    background: #000 url("https://newevolutiondesigns.com/images/freebies/texture-wallpaper-23.jpg") center center;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -15,7 +15,7 @@
     color: white;
     } </style>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container ">
+        <div class="container">
             <h1 class="display-3 text-primary">Eyal's Project</h1>
             <p class="lead text-info">This site is about metal music, hope you dont mind i'll probbly wont do 100p.</p>
         </div>
