@@ -112,6 +112,9 @@
                             <li class="nav-item ml-auto">
                                 <a class="btn btn-primary" href="Logout.aspx" role="button">Logout</a> 
                             </li>
+                            <li class="nav-item ml-auto">
+                                <a class="btn btn-primary" href="Update.aspx" role="button">Update</a> 
+                            </li>
                         </ul>
                     </div>
          </nav>

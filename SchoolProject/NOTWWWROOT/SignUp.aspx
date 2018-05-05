@@ -16,6 +16,7 @@
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["err"] = "";
         if (Request.Form["Register"] != null)
         {
             string name = Request.Form["firstName"];
