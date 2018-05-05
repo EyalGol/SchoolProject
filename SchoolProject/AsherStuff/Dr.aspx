@@ -5,19 +5,19 @@
     protected void Page_Load(object sender, EventArgs e)
     {
 
-        if (Session["Login"].ToString() != "admin")
-        {
-            Response.Redirect("Err.aspx");
-            Response.End();
-        }        
+        //if (Session["Login"].ToString() != "admin")
+        //{
+        //    Response.Redirect("Err.aspx");
+        //    Response.End();
+        //}        
         
 
         if (Request.Form["btn"] != null)
         {
-            str = " <table border='1'><tr><td>שם משתמש</td><td>סיסמה</td><td>גיל</td></tr>";
+            str = " <div class='container'><table class='table'><tr><td>שם משתמש</td><td>סיסמה</td><td>גיל</td></tr>";
 
-            string conStr = @"Data Source=.;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True;User Instance=True";
-            string cmdStr = "SELECT  UserName, Pass, Age FROM   UserTbl ORDER BY Pass ";
+            string conStr = @"AttachDbFilename=E:\SchoolProject\SchoolProject\App_Data\Database.mdf;Integrated Security=True;Connect Timeout=1;Trusted_Connection=Yes;";
+            string cmdStr = "SELECT * FROM Users ORDER BY name";
             SqlConnection conObj = new SqlConnection(conStr);
             SqlCommand cmdObj = new SqlCommand(cmdStr, conObj);
 
@@ -27,9 +27,9 @@
             {
                 while (dr.Read())
                 {
-                    str += "<tr><td>" + dr["username"] + "</td><td>" + dr["pass"] + "</td><td>" + dr["age"] + "</td></tr>";
+                    str += "<tr><td>" + dr["name"] + "</td><td>" + dr["email"] + "</td><td>" + dr["password"] + "</td><td>" + dr["birthdate"] + "</td><td>" + dr["country"] + "</td><td>" + dr["gender"] + "</td><td>" + dr["gender"] + "</td><td>" + dr["metal_gener"] + "</td></tr>";
                 }
-                str += "</table>";
+                str += "</table></div>";
             }
             else
             {

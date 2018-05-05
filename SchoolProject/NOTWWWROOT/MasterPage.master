@@ -5,10 +5,6 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["name"] == null)
-        {
-            Session["name"] = "Login";
-        }
     }
 </script>
 <html>
@@ -114,6 +110,17 @@
                             </li>
                             <li class="nav-item ml-auto">
                                 <a class="btn btn-primary" href="Update.aspx" role="button">Update</a> 
+                            </li>
+                            <li class="nav-item ml-auto">
+                                <a class="btn btn-primary" href="#" role="button"><%=Application["counter"] %></a> 
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="dropdownAdmin" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Admin
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">                                    
+                                    <a class="dropdown-item" href="Dr.aspx">Users</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
