@@ -15,7 +15,7 @@ public class SqlConnectionUtil
 
     public static SqlConnection Create()
     {
-        var con = new SqlConnection(@"Data Source=.;AttachDbFilename=E:\SchoolProject\SchoolProject\App_Data\Database.mdf;Integrated Security=True;Connect Timeout=1;");
+        var con = new SqlConnection(@"AttachDbFilename=E:\SchoolProject\SchoolProject\App_Data\Database.mdf;Integrated Security=True;Connect Timeout=1;Trusted_Connection=Yes;");
         con.Open();
         return con;
         //return new SqlConnection(Properties.Settings.Default.TheConnectionString);
