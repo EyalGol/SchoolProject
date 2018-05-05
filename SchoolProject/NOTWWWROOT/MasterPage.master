@@ -3,7 +3,10 @@
 <%@ Import Namespace="System.Data" %>
 <!DOCTYPE html>
 <script runat="server">
-
+    protected void Page_Load(object sender, EventArgs e)
+    {
+       Session["name"] = "Login";
+    }
 </script>
 <html>
 <head runat="server">
@@ -99,6 +102,9 @@
                         <ul class="navbar-nav ml-auto">
                             <li class="navbar-item my-2 my-lg-0">
                                 <a class="btn btn-primary" href="SignUp.aspx" role="button">Sing Up</a> 
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="btn btn-primary" href="Login.aspx" role="button">Sing In</a> 
                             </li>
                         </ul>
                     </div>

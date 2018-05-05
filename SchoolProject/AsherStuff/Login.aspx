@@ -44,12 +44,12 @@
     <center>
   
 <form action="Login.aspx" method="post">
-
-<table> 
-<tr><td><input type="text" name="username" /></td><td>שם משתמש</td></tr> 
-<tr><td><input type="password" name="pass" /></td><td>סיסמה</td></tr>
-</table>
-<input type="submit" value="התחבר" name="sub" />
-</form></center>
+    <table> 
+        <tr><td><input type="text" name="username" /></td><td>שם משתמש</td></tr> 
+        <tr><td><input type="password" name="pass" /></td><td>סיסמה</td></tr>
+    </table>
+        <input type="submit" value="התחבר" name="sub" />
+    </form>
+</center>
 </asp:Content>
 
