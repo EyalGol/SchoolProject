@@ -7,12 +7,12 @@
     {
 
 
-        using (var connection = SqlConnectionUtil.Create())
+        using (var connection = SqlUtil.CreateCon())
         {
             var cmdStr = string.Format("INSERT  INTO Users(name, password) VALUES( N'{0}', N'{1}') ", "asher", "1234");
             SqlCommand cmd = new SqlCommand(cmdStr, connection);
             cmd.ExecuteNonQuery();
-           
+
             //using (var da = new SqlDataAdapter(cmdStr1, connection))
             //{
             //    using (DataSet ds = new DataSet())
@@ -27,7 +27,7 @@
             {
                 if (dr.HasRows)
                 {
-                     result += "<table>";
+                    result += "<table>";
                     while (dr.Read())
                     {
                         result += "<tr><td>" + dr["name"] + "</td><td>" + dr["password"] + "</td></tr>";
