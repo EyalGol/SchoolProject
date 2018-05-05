@@ -5,13 +5,12 @@
     {
         using (var connection = SqlUtil.CreateCon())
         {
-            bool f = false;
-            SqlCommand cmd = new SqlCommand(string.Format("SELECT * FROM Users WHERE (email = N'{0}')", email), connection);
+            var cmd = new SqlCommand(string.Format("SELECT * FROM Users WHERE (email = N'{0}')", email), connection);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.HasRows)
-                f = true;
+                return true;
             connection.Close();
-            return f;
+            return false;
         }
     }
 
@@ -81,7 +80,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="password" class="col-sm-3 control-label" onblur="return CheckPassword()">Password</label>
+                    <label for="password" class="col-sm-3 control-label">Password</label>
                     <div class="col-sm-9">
                         <input type="password" id="password" name="password" placeholder="Password" class="form-control">
                         <span class="help-block" id="errPassword"></span>
