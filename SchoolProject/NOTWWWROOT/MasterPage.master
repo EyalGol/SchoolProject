@@ -119,7 +119,7 @@
                                     Admin
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">                                    
-                                    <a class="dropdown-item" href="Dr.aspx">Users</a>
+                                    <a class="dropdown-item" href="Admin.aspx">Users</a>
                                 </div>
                             </li>
                         </ul>
