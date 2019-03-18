@@ -2,6 +2,6 @@
 basic website with a simple data base and bootstrap design
 #### skills I used:
 - bootstrap
-- MySql
+- sql
 - aspx (haha very relevent)
 
